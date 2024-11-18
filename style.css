@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #socialicons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+  }
+
+ 
+  .wrapper2{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+ /* Basic styling for the container */
+.popover-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Button styling */
+  .popover-button {
+     cursor: pointer;
+  }
+  
+ /* popover box styling */
+  .popover-content {
+    display: none;
+    position:absolute;
+    top: calc(100% + 5px);  
+    left:-100px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color:#030303 ;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 10;
+    margin: 0;
+  }
+  
+  /* Show the popover when hovering over the button */
+  .popover-container:hover .popover-content {
+    display: block;
+    overflow: visible;
+   
+  }
+  
